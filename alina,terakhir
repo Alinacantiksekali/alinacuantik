@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #fce8f3;
+            color: #333;
+            text-align: center;
+        }
+        nav {
+            background: #ffb3c6;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 50px;
+            background: #ff85a2;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav a:hover {
+            background: #ffccd5;
+            transform: scale(1.1);
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 1.5rem;
+            transition: 0.5s;
+            position: relative;
+        }
+        .divider {
+            padding: 15px 30px;
+            background: #ff85a2;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            margin: 30px auto 10px;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+        #profil { background: linear-gradient(to right, #ffd6e0, #ffb3c6); }
+        #pendidikan { background: linear-gradient(to right, #ffcad4, #ffafbd); }
+        #pengalaman { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }
+        #hobi { background: linear-gradient(to right, #d4a5ff, #ffafbd); }
+        #kontak { background: linear-gradient(to right, #ffc2d1, #ffa6c1); }
+        p, h2 {
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ff85a2;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background: #ff85a2;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background: #ffb3c6;
+            transform: rotate(5deg);
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+                border-radius: 0 0 15px 15px;
+            }
+            nav a {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            section {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#profil">✨ Profil</a>
+        <a href="#pendidikan">📚 Pendidikan</a>
+        <a href="#pengalaman">💼 Pengalaman</a>
+        <a href="#hobi">🎨 Hobi</a>
+        <a href="#kontak">📞 Kontak</a>
+    </nav>
+    <section id="profil">
+        <div class="divider">✨ Profil</div>
+        <img src="gambar/alin.jpg" alt="Foto Profil" class="profile-img">
+        <p>Nama: Fatichah Asmalina</p>
+        <p>Profesi: Pelajar SMK Teknik Komputer dan Jaringan</p>
+        <p>Alamat: Wonosobo, Indonesia</p>
+        <p>Tanggal Lahir: 7 Januari 2007</p>
+        <p>Saya adalah seorang yang selalu ingin belajar dan berkembang. Saya tertarik dengan dunia teknologi, desain, dan hal-hal kreatif lainnya. Selain itu, saya suka mencoba tantangan baru serta bekerja sama dalam tim untuk mencapai tujuan bersama.</p>
+    </section>
+    <section id="pendidikan">
+        <div class="divider">📚 Pendidikan</div>
+        <p>SD Negeri 1 Sendang Sari</p>
+        <p> SMP Negeri 3 Garung</p>
+        <p>SMK Negeri 1 Wonosobo - Teknik Komputer dan Jaringan</p>
+    </section>
+    <section id="pengalaman">
+        <div class="divider">💼 Pengalaman</div>
+        <p>Belum memiliki pengalaman kerja, namun aktif dalam proyek dan kegiatan sekolah.</p>
+    </section>
+    <section id="hobi">
+        <div class="divider">🎨 Hobi</div>
+        <p>Menggambar</p>
+        <p>Mendengarkan musik</p>
+        <p>Membaca</p>
+    </section>
+    <section id="kontak">
+        <div class="divider">📞 Kontak</div>
+        <p>Email: Alinacantikbaikhati@gmail.com</p>
+        <p>Telepon: 08123456789</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/heheyippe?igsh=MTQ0aXRneGw3dmlkOQ==" target="_blank">📸 Instagram</a>
+            <a href="https://www.tiktok.com/@sukaaacoklatttt_1?_t=ZS-8t6n6vphdua&_r=1" target="_blank">🎵 TikTok</a>
+            <a href="https://www.facebook.com/share/15Ut3DyS3S/" target="_blank">📘 Facebook</a>
+        </div>
+    </section>
+</body>
+</html>
